@@ -28,51 +28,73 @@
   <body>
 
     <div class="container-fluid p-0">
-
-      <section class="resume-section" id="images">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="screens">
         <div class="my-auto">
-          <h2 class="mb-5">Images</h2>
-          <div id="demo" class="carousel slide" data-ride="carousel">
+          <h2 class="mb-5">Screenshots</h2>
 
-        <!-- Indicators -->
-          <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-          </ul>
+          <p>
+            <a href='https://play.google.com/store/apps/details?id=com.wisechimp.theperfectbeerjava&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width=240dp/></a>
+          </p>
 
-          <!-- The slideshow -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/andPerfectBeerScreen1.png" alt="The Perfect Beer Home Screen">
-              <div class="carousel-caption">
-                <h3>Home Screen</h3>
-                <p>The app's introductory screen</p>
+          <div class="card-columns">
+
+              <div class="card">
+                <div class="card-header">
+                  Screen 1
+                </div>
+                <img class="card-img-top" src="images/andPerfectBeerScreen1.png" alt="Screenshot from the Android Perfect Beer app">
+                <div class="card-body">
+                  <p class="card-text">The introductory screen. While this is setting up the database with beers is created in the background.</p>
+                </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <img src="images/andPerfectBeerScreen2.png" alt="The Perfect Beer Beer List Screen">
-            </div>
-            <div class="carousel-item">
-              <img src="images/andPerfectBeerScreen3.png" alt="The Perfect Beer Beer Info Screen">
-            </div>
+
+              <div class="card">
+                <div class="card-header">
+                  Screen 2
+                </div>
+                <img class="card-img-top" src="images/andPerfectBeerScreen2.png" alt="Screenshot from the Android Perfect Beer app">
+                <div class="card-body">
+                  <p class="card-text">The list of beer names is loaded into the recycler view from the Room database. Originally the database was being created here at the same time as the recycler view, resulting in a only the beers that had been processed by Room appearing when the page loaded. This is why the database creation was enacted earlier in the app.Selecting one of these leads to...</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  Screen 3
+                </div>
+                <img class="card-img-top" src="images/andPerfectBeerScreen3.png" alt="Screenshot from the Android Perfect Beer app">
+                <div class="card-body">
+                  <p class="card-text">A screen with information about the chosen beer.</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  Screen 4
+                </div>
+                <img class="card-img-top" src="images/andPerfectBeerScreen4.png" alt="Screenshot from the Android Perfect Beer app">
+                <div class="card-body">
+                  <p class="card-text">This screen calculates the time required to cool a beer from a certain temperature, depending on it's starting temperature and the cooling environment being used. Upon completion a notification is created and the time calculated is also passed on to...</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  Screen 5
+                </div>
+                <img class="card-img-top" src="images/andPerfectBeerScreen5.png" alt="Screenshot from the Android Perfect Beer app">
+                <div class="card-body">
+                  <p class="card-text">The final screen which counts down to the beer being ready. This was an important screen to make lifecycle aware as rotating the screen would otherwise reset these numbers making this screen completely useless, or even attempt to countdown several numbers simultaneousl!</p>
+                </div>
+              </div>
           </div>
+        </section>
 
-          <!-- Left and right controls -->
-          <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
-
-        </div>
-
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
-          <ul>
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+          <div class="my-auto">
+            <h2 class="mb-5">Experience</h2>
+            <p>My second published Android app, produced during my Malmö Yrkeshögskolan course on app development. The aim of the app is to inform someone how long their beer requires in the fridge or a similar cooler to be served at the correct temperature.</p>
+            <ul>
             <li>Constraint Layouts</li>
             <li>Notifications</li>
             <li>View Models (MVVM)</li>
